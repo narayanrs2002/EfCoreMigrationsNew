@@ -5,10 +5,12 @@ namespace EfCoreMigrations.Repository
 {
     public class EfMigrationE0146Rep:IEfMigrationE0146Rep
     {
-        AppDbContext dbContext { get; set; }
-        public EfMigrationE0146Rep ( AppDbContext _dbContext)
+        //Comment testing
+        AppDbContext dbContext { get; set; }//Comment Random on an existing line
+
+        public EfMigrationE0146Rep ( AppDbContext dbContextConstruct)
         {
-            dbContext = _dbContext;
+            dbContext = dbContextConstruct;
         }
         public async Task<bool> EfMigrationsSave(EfCoreMigrations.Entity.EfMigrationE0146 efMigrationE0146)
         {
