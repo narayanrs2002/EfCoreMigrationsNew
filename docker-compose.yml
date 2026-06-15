@@ -1,0 +1,8 @@
+services:
+  efcoremigrations:
+    image: ${DOCKER_REGISTRY-}efcoremigrations
+    build:
+      context: .
+      dockerfile: EfCoreMigrations/Dockerfile
+    ports:
+      - "475:8080"
